@@ -87,7 +87,7 @@ document.getElementById("call-btn").addEventListener('click',function(e){
     alert('কল করুন জাতীয় জরুরি সেবা.....999')
 
     const availableCoin = parseInt(document.getElementById("available-coin").innerText)
-    console.log(availableCoin)
+    // console.log(availableCoin)
 
     // Condition Feild in card:
     if(availableCoin<20 || availableCoin===0){
@@ -110,7 +110,7 @@ document.getElementById("call-btn").addEventListener('click',function(e){
 const callHistoryContainer = document.getElementById("call-history-container")
 callHistoryContainer.innerHTML="";
 for(const data of callHistoryData){
-    console.log(data)
+    // console.log(data)
     const div = document.createElement("div")
     div.innerHTML=`
     <div class="mt-[50px] rounded-lg shadow-xl p-3 bg-[#f6f6f6]">
@@ -137,7 +137,7 @@ document.getElementById("cal-btn2").addEventListener('click',function(e){
     alert('কল করুন বাংলাদেশ পুলিশ.....999')
 
     const availableCoin = parseInt(document.getElementById("available-coin").innerText)
-    console.log(availableCoin)
+    // console.log(availableCoin)
 
     // Condition Feild in card:
     if(availableCoin<20 || availableCoin===0){
@@ -160,7 +160,7 @@ document.getElementById("cal-btn2").addEventListener('click',function(e){
 const callHistoryContainer = document.getElementById("call-history-container")
 callHistoryContainer.innerHTML="";
 for(const data of callHistoryData){
-    console.log(data)
+    // console.log(data)
     const div = document.createElement("div")
     div.innerHTML=`
     <div class="mt-[50px] rounded-lg shadow-xl p-3 bg-[#f6f6f6]">
@@ -187,7 +187,7 @@ document.getElementById("cal-btn3").addEventListener('click',function(e){
     alert('কল করুন ফায়ার সার্ভিস.....999')
 
     const availableCoin = parseInt(document.getElementById("available-coin").innerText)
-    console.log(availableCoin)
+    // console.log(availableCoin)
 
     // Condition Feild in card:
     if(availableCoin<20 || availableCoin===0){
@@ -210,7 +210,7 @@ document.getElementById("cal-btn3").addEventListener('click',function(e){
 const callHistoryContainer = document.getElementById("call-history-container")
 callHistoryContainer.innerHTML="";
 for(const data of callHistoryData){
-    console.log(data)
+    // console.log(data)
     const div = document.createElement("div")
     div.innerHTML=`
     <div class="mt-[50px] rounded-lg shadow-xl p-3 bg-[#f6f6f6]">
@@ -237,7 +237,7 @@ document.getElementById("call-btn4").addEventListener('click',function(e){
     alert('কল করুন জরুরি সেবা অ্যাম্বুলেন্স.....01994-999999')
 
     const availableCoin = parseInt(document.getElementById("available-coin").innerText)
-    console.log(availableCoin)
+    // console.log(availableCoin)
 
     // Condition Feild in card:
     if(availableCoin<20 || availableCoin===0){
@@ -260,7 +260,7 @@ document.getElementById("call-btn4").addEventListener('click',function(e){
 const callHistoryContainer = document.getElementById("call-history-container")
 callHistoryContainer.innerHTML="";
 for(const data of callHistoryData){
-    console.log(data)
+    // console.log(data)
     const div = document.createElement("div")
     div.innerHTML=`
     <div class="mt-[50px] rounded-lg shadow-xl p-3 bg-[#f6f6f6]">
@@ -286,7 +286,7 @@ document.getElementById("call-btn5").addEventListener('click',function(e){
     alert('কল করুন নারী ও শিশু সহায়তা.....109')
 
     const availableCoin = parseInt(document.getElementById("available-coin").innerText)
-    console.log(availableCoin)
+    // console.log(availableCoin)
 
     // Condition Feild in card:
     if(availableCoin<20 || availableCoin===0){
@@ -309,7 +309,7 @@ document.getElementById("call-btn5").addEventListener('click',function(e){
 const callHistoryContainer = document.getElementById("call-history-container")
 callHistoryContainer.innerHTML="";
 for(const data of callHistoryData){
-    console.log(data)
+    // console.log(data)
     const div = document.createElement("div")
     div.innerHTML=`
     <div class="mt-[50px] rounded-lg shadow-xl p-3 bg-[#f6f6f6]">
@@ -335,7 +335,7 @@ document.getElementById("call-btn6").addEventListener('click',function(e){
     alert('কল করুন দুর্নীতি দমন কমিশন.....106')
 
     const availableCoin = parseInt(document.getElementById("available-coin").innerText)
-    console.log(availableCoin)
+    // console.log(availableCoin)
 
     // Condition Feild in card:
     if(availableCoin<20 || availableCoin===0){
@@ -358,7 +358,7 @@ document.getElementById("call-btn6").addEventListener('click',function(e){
 const callHistoryContainer = document.getElementById("call-history-container")
 callHistoryContainer.innerHTML="";
 for(const data of callHistoryData){
-    console.log(data)
+    // console.log(data)
     const div = document.createElement("div")
     div.innerHTML=`
     <div class="mt-[50px] rounded-lg shadow-xl p-3 bg-[#f6f6f6]">
@@ -384,7 +384,7 @@ document.getElementById("call-btn7").addEventListener('click',function(e){
     alert('কল করুন জরুরি বিদ্যুৎ সরবরাহ.....16216')
 
     const availableCoin = parseInt(document.getElementById("available-coin").innerText)
-    console.log(availableCoin)
+    // console.log(availableCoin)
 
     // Condition Feild in card:
     if(availableCoin<20 || availableCoin===0){
@@ -407,7 +407,7 @@ document.getElementById("call-btn7").addEventListener('click',function(e){
 const callHistoryContainer = document.getElementById("call-history-container")
 callHistoryContainer.innerHTML="";
 for(const data of callHistoryData){
-    console.log(data)
+    // console.log(data)
     const div = document.createElement("div")
     div.innerHTML=`
     <div class="mt-[50px] rounded-lg shadow-xl p-3 bg-[#f6f6f6]">
@@ -435,7 +435,7 @@ document.getElementById("call-btn8").addEventListener('click',function(e){
     alert('কল করুন ব্র্যাক.....16445')
 
     const availableCoin = parseInt(document.getElementById("available-coin").innerText)
-    console.log(availableCoin)
+    // console.log(availableCoin)
 
     // Condition Feild in card:
     if(availableCoin<20 || availableCoin===0){
@@ -458,7 +458,7 @@ document.getElementById("call-btn8").addEventListener('click',function(e){
 const callHistoryContainer = document.getElementById("call-history-container")
 callHistoryContainer.innerHTML="";
 for(const data of callHistoryData){
-    console.log(data)
+    // console.log(data)
     const div = document.createElement("div")
     div.innerHTML=`
     <div class="mt-[50px] rounded-lg shadow-xl p-3 bg-[#f6f6f6]">
@@ -485,7 +485,7 @@ document.getElementById("call-btn9").addEventListener('click',function(e){
     alert('কল করুন বাংলাদেশ রেলওয়ে.....163')
 
     const availableCoin = parseInt(document.getElementById("available-coin").innerText)
-    console.log(availableCoin)
+    // console.log(availableCoin)
 
     // Condition Feild in card:
     if(availableCoin<20 || availableCoin===0){
@@ -508,7 +508,7 @@ document.getElementById("call-btn9").addEventListener('click',function(e){
 const callHistoryContainer = document.getElementById("call-history-container")
 callHistoryContainer.innerHTML="";
 for(const data of callHistoryData){
-    console.log(data)
+    // console.log(data)
     const div = document.createElement("div")
     div.innerHTML=`
     <div class="mt-[50px] rounded-lg shadow-xl p-3 bg-[#f6f6f6]">
@@ -533,7 +533,7 @@ for(const data of callHistoryData){
 
 document.getElementById("clear-btn").addEventListener('click',function(e){
     e.preventDefault()
-    console.log('clear')
+    // console.log('clear')
     callHistoryData= [];
     const callHistoryContainer = document.getElementById("call-history-container")
     callHistoryContainer.innerHTML="";
