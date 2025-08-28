@@ -84,7 +84,7 @@ let callHistoryData = [];
 
 document.getElementById("call-btn").addEventListener('click',function(e){ 
     
-    alert('জাতীয় জরুরি সেবা.....999')
+    alert('কল করুন জাতীয় জরুরি সেবা.....999')
 
     const availableCoin = parseInt(document.getElementById("available-coin").innerText)
     console.log(availableCoin)
@@ -134,7 +134,7 @@ for(const data of callHistoryData){
 
 document.getElementById("cal-btn2").addEventListener('click',function(e){ 
     
-    alert('বাংলাদেশ পুলিশ.....999')
+    alert('কল করুন বাংলাদেশ পুলিশ.....999')
 
     const availableCoin = parseInt(document.getElementById("available-coin").innerText)
     console.log(availableCoin)
@@ -184,7 +184,7 @@ for(const data of callHistoryData){
 
 document.getElementById("cal-btn3").addEventListener('click',function(e){ 
     
-    alert('ফায়ার সার্ভিস.....999')
+    alert('কল করুন ফায়ার সার্ভিস.....999')
 
     const availableCoin = parseInt(document.getElementById("available-coin").innerText)
     console.log(availableCoin)
@@ -234,7 +234,7 @@ for(const data of callHistoryData){
 
 document.getElementById("call-btn4").addEventListener('click',function(e){ 
     
-    alert('জরুরি সেবা অ্যাম্বুলেন্স.....01994-999999')
+    alert('কল করুন জরুরি সেবা অ্যাম্বুলেন্স.....01994-999999')
 
     const availableCoin = parseInt(document.getElementById("available-coin").innerText)
     console.log(availableCoin)
@@ -283,7 +283,7 @@ for(const data of callHistoryData){
 // card-5:
 document.getElementById("call-btn5").addEventListener('click',function(e){ 
     
-    alert('নারী ও শিশু সহায়তা.....109')
+    alert('কল করুন নারী ও শিশু সহায়তা.....109')
 
     const availableCoin = parseInt(document.getElementById("available-coin").innerText)
     console.log(availableCoin)
@@ -332,7 +332,7 @@ for(const data of callHistoryData){
 // card-6:
 document.getElementById("call-btn6").addEventListener('click',function(e){ 
     
-    alert('দুর্নীতি দমন কমিশন.....106')
+    alert('কল করুন দুর্নীতি দমন কমিশন.....106')
 
     const availableCoin = parseInt(document.getElementById("available-coin").innerText)
     console.log(availableCoin)
@@ -381,7 +381,7 @@ for(const data of callHistoryData){
 // card-7:
 document.getElementById("call-btn7").addEventListener('click',function(e){ 
     
-    alert('জরুরি বিদ্যুৎ সরবরাহ.....16216')
+    alert('কল করুন জরুরি বিদ্যুৎ সরবরাহ.....16216')
 
     const availableCoin = parseInt(document.getElementById("available-coin").innerText)
     console.log(availableCoin)
@@ -432,7 +432,7 @@ for(const data of callHistoryData){
 // card-8:
 document.getElementById("call-btn8").addEventListener('click',function(e){ 
     
-    alert('ব্র্যাক.....16445')
+    alert('কল করুন ব্র্যাক.....16445')
 
     const availableCoin = parseInt(document.getElementById("available-coin").innerText)
     console.log(availableCoin)
@@ -482,7 +482,7 @@ for(const data of callHistoryData){
 // card-9:
 document.getElementById("call-btn9").addEventListener('click',function(e){ 
     
-    alert('বাংলাদেশ রেলওয়ে.....163')
+    alert('কল করুন বাংলাদেশ রেলওয়ে.....163')
 
     const availableCoin = parseInt(document.getElementById("available-coin").innerText)
     console.log(availableCoin)
@@ -539,5 +539,108 @@ document.getElementById("clear-btn").addEventListener('click',function(e){
     callHistoryContainer.innerHTML="";
 })
 
+
+
+// Text Copy function:
+
+// card-1:
+document.getElementById("copy-btn1").addEventListener('click', function(e){
+    const copyText = document.getElementById("copy-text1").innerText
+    navigator.clipboard.writeText(copyText).then(() => { 
+        alert("999 কপি হয়েছে ✅");
+    })
+
+    const copyCount = parseInt(document.getElementById("copy-number").innerText)
+    const newCopyCount = copyCount + 1;
+    document.getElementById("copy-number").innerText=newCopyCount;
+})
+// card-2:
+document.getElementById("copy-btn2").addEventListener('click', function(e){
+    const copyText = document.getElementById("copy-text2").innerText
+    navigator.clipboard.writeText(copyText).then(() => { 
+        alert("999 কপি হয়েছে ✅");
+    })
+
+    const copyCount = parseInt(document.getElementById("copy-number").innerText)
+    const newCopyCount = copyCount + 1;
+    document.getElementById("copy-number").innerText=newCopyCount;
+})
+// card-3:
+document.getElementById("copy-btn3").addEventListener('click', function(e){
+    const copyText = document.getElementById("copy-text3").innerText
+    navigator.clipboard.writeText(copyText).then(() => { 
+        alert("999 কপি হয়েছে ✅");
+    })
+
+    const copyCount = parseInt(document.getElementById("copy-number").innerText)
+    const newCopyCount = copyCount + 1;
+    document.getElementById("copy-number").innerText=newCopyCount;
+})
+// card-4:
+document.getElementById("copy-btn4").addEventListener('click', function(e){
+    const copyText = document.getElementById("copy-text4").innerText
+    navigator.clipboard.writeText(copyText).then(() => { 
+        alert("01994-999999 কপি হয়েছে ✅");
+    })
+
+    const copyCount = parseInt(document.getElementById("copy-number").innerText)
+    const newCopyCount = copyCount + 1;
+    document.getElementById("copy-number").innerText=newCopyCount;
+})
+// card-5:
+document.getElementById("copy-btn5").addEventListener('click', function(e){
+    const copyText = document.getElementById("copy-text5").innerText
+    navigator.clipboard.writeText(copyText).then(() => { 
+        alert("109 কপি হয়েছে ✅");
+    })
+
+    const copyCount = parseInt(document.getElementById("copy-number").innerText)
+    const newCopyCount = copyCount + 1;
+    document.getElementById("copy-number").innerText=newCopyCount;
+})
+// card-6:
+document.getElementById("copy-btn6").addEventListener('click', function(e){
+    const copyText = document.getElementById("copy-text6").innerText
+    navigator.clipboard.writeText(copyText).then(() => { 
+        alert("106 কপি হয়েছে ✅");
+    })
+
+    const copyCount = parseInt(document.getElementById("copy-number").innerText)
+    const newCopyCount = copyCount + 1;
+    document.getElementById("copy-number").innerText=newCopyCount;
+})
+// card-7:
+document.getElementById("copy-btn7").addEventListener('click', function(e){
+    const copyText = document.getElementById("copy-text7").innerText
+    navigator.clipboard.writeText(copyText).then(() => { 
+        alert("16216 কপি হয়েছে ✅");
+    })
+
+    const copyCount = parseInt(document.getElementById("copy-number").innerText)
+    const newCopyCount = copyCount + 1;
+    document.getElementById("copy-number").innerText=newCopyCount;
+})
+// card-8:
+document.getElementById("copy-btn8").addEventListener('click', function(e){
+    const copyText = document.getElementById("copy-text8").innerText
+    navigator.clipboard.writeText(copyText).then(() => { 
+        alert("16445 কপি হয়েছে ✅");
+    })
+
+    const copyCount = parseInt(document.getElementById("copy-number").innerText)
+    const newCopyCount = copyCount + 1;
+    document.getElementById("copy-number").innerText=newCopyCount;
+})
+// card-9:
+document.getElementById("copy-btn9").addEventListener('click', function(e){
+    const copyText = document.getElementById("copy-text9").innerText
+    navigator.clipboard.writeText(copyText).then(() => { 
+        alert("163 কপি হয়েছে ✅");
+    })
+
+    const copyCount = parseInt(document.getElementById("copy-number").innerText)
+    const newCopyCount = copyCount + 1;
+    document.getElementById("copy-number").innerText=newCopyCount;
+})
 
 
