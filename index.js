@@ -71,3 +71,473 @@ document.getElementById("heart-icon-btn9").addEventListener('click',function(e){
     document.getElementById("available-heart").innerText=newAvailableHeart
     
 })
+
+
+
+
+
+
+// Call Button Function :
+let callHistoryData = [];
+
+// card- 1:
+
+document.getElementById("call-btn").addEventListener('click',function(e){ 
+    
+    alert('জাতীয় জরুরি সেবা.....999')
+
+    const availableCoin = parseInt(document.getElementById("available-coin").innerText)
+    console.log(availableCoin)
+
+    // Condition Feild in card:
+    if(availableCoin<20 || availableCoin===0){
+        alert('পর্যাপ্ত পরিমান কয়েন নেই। কল করতে কমপক্ষে ২০ কইয়েন লাগবে...')
+        return;
+    }
+    const newAvailableCoin = availableCoin-20;
+    document.getElementById("available-coin").innerText=newAvailableCoin
+
+    // Call history :
+
+    const data={
+        name:'জাতীয় জরুরি সেবা',
+        number:'999',
+        time:new Date().toLocaleTimeString()
+    }
+    callHistoryData.push(data)
+
+    // Call History Function :
+const callHistoryContainer = document.getElementById("call-history-container")
+callHistoryContainer.innerHTML="";
+for(const data of callHistoryData){
+    console.log(data)
+    const div = document.createElement("div")
+    div.innerHTML=`
+    <div class="mt-[50px] rounded-lg shadow-xl p-3 bg-[#f6f6f6]">
+                <div class="bg-white flex justify-between items-center p-1 rounded-xl">
+                    <div>
+                        <h1 class="text-[20px] text-[#111111] font-bold">
+                            ${data.name}
+                        </h1>
+                        <p class="ml-2 font-semibold">${data.number}</p>
+                    </div>
+                    <p>${data.time}</p>
+                </div>
+            </div>
+        
+    `
+    callHistoryContainer.appendChild(div)
+}
+})
+
+// card-2:
+
+document.getElementById("cal-btn2").addEventListener('click',function(e){ 
+    
+    alert('বাংলাদেশ পুলিশ.....999')
+
+    const availableCoin = parseInt(document.getElementById("available-coin").innerText)
+    console.log(availableCoin)
+
+    // Condition Feild in card:
+    if(availableCoin<20 || availableCoin===0){
+        alert('পর্যাপ্ত পরিমান কয়েন নেই। কল করতে কমপক্ষে ২০ কইয়েন লাগবে...')
+        return;
+    }
+    const newAvailableCoin = availableCoin-20;
+    document.getElementById("available-coin").innerText=newAvailableCoin
+
+    // Call history :
+
+    const data={
+        name:'পুলিশ',
+        number:'999',
+        time:new Date().toLocaleTimeString()
+    }
+    callHistoryData.push(data)
+
+    // Call History Function :
+const callHistoryContainer = document.getElementById("call-history-container")
+callHistoryContainer.innerHTML="";
+for(const data of callHistoryData){
+    console.log(data)
+    const div = document.createElement("div")
+    div.innerHTML=`
+    <div class="mt-[50px] rounded-lg shadow-xl p-3 bg-[#f6f6f6]">
+                <div class="bg-white flex justify-between items-center p-1 rounded-xl">
+                    <div>
+                        <h1 class="text-[20px] text-[#111111] font-bold">
+                            ${data.name}
+                        </h1>
+                        <p class="ml-2 font-semibold">${data.number}</p>
+                    </div>
+                    <p>${data.time}</p>
+                </div>
+            </div>
+        
+    `
+    callHistoryContainer.appendChild(div)
+}
+})
+
+// card-3:
+
+document.getElementById("cal-btn3").addEventListener('click',function(e){ 
+    
+    alert('ফায়ার সার্ভিস.....999')
+
+    const availableCoin = parseInt(document.getElementById("available-coin").innerText)
+    console.log(availableCoin)
+
+    // Condition Feild in card:
+    if(availableCoin<20 || availableCoin===0){
+        alert('পর্যাপ্ত পরিমান কয়েন নেই। কল করতে কমপক্ষে ২০ কইয়েন লাগবে...')
+        return;
+    }
+    const newAvailableCoin = availableCoin-20;
+    document.getElementById("available-coin").innerText=newAvailableCoin
+
+    // Call history :
+
+    const data={
+        name:'ফায়ার সার্ভিস',
+        number:'999',
+        time:new Date().toLocaleTimeString()
+    }
+    callHistoryData.push(data)
+
+    // Call History Function :
+const callHistoryContainer = document.getElementById("call-history-container")
+callHistoryContainer.innerHTML="";
+for(const data of callHistoryData){
+    console.log(data)
+    const div = document.createElement("div")
+    div.innerHTML=`
+    <div class="mt-[50px] rounded-lg shadow-xl p-3 bg-[#f6f6f6]">
+                <div class="bg-white flex justify-between items-center p-1 rounded-xl">
+                    <div>
+                        <h1 class="text-[20px] text-[#111111] font-bold">
+                            ${data.name}
+                        </h1>
+                        <p class="ml-2 font-semibold">${data.number}</p>
+                    </div>
+                    <p>${data.time}</p>
+                </div>
+            </div>
+        
+    `
+    callHistoryContainer.appendChild(div)
+}
+})
+
+// card-4:
+
+document.getElementById("call-btn4").addEventListener('click',function(e){ 
+    
+    alert('জরুরি সেবা অ্যাম্বুলেন্স.....01994-999999')
+
+    const availableCoin = parseInt(document.getElementById("available-coin").innerText)
+    console.log(availableCoin)
+
+    // Condition Feild in card:
+    if(availableCoin<20 || availableCoin===0){
+        alert('পর্যাপ্ত পরিমান কয়েন নেই। কল করতে কমপক্ষে ২০ কইয়েন লাগবে...')
+        return;
+    }
+    const newAvailableCoin = availableCoin-20;
+    document.getElementById("available-coin").innerText=newAvailableCoin
+
+    // Call history :
+
+    const data={
+        name:'অ্যাম্বুলেন্স',
+        number:'01994-999999',
+        time:new Date().toLocaleTimeString()
+    }
+    callHistoryData.push(data)
+
+    // Call History Function :
+const callHistoryContainer = document.getElementById("call-history-container")
+callHistoryContainer.innerHTML="";
+for(const data of callHistoryData){
+    console.log(data)
+    const div = document.createElement("div")
+    div.innerHTML=`
+    <div class="mt-[50px] rounded-lg shadow-xl p-3 bg-[#f6f6f6]">
+                <div class="bg-white flex justify-between items-center p-1 rounded-xl">
+                    <div>
+                        <h1 class="text-[20px] text-[#111111] font-bold">
+                            ${data.name}
+                        </h1>
+                        <p class="ml-2 font-semibold">${data.number}</p>
+                    </div>
+                    <p>${data.time}</p>
+                </div>
+            </div>
+        
+    `
+    callHistoryContainer.appendChild(div)
+}
+})
+
+// card-5:
+document.getElementById("call-btn5").addEventListener('click',function(e){ 
+    
+    alert('নারী ও শিশু সহায়তা.....109')
+
+    const availableCoin = parseInt(document.getElementById("available-coin").innerText)
+    console.log(availableCoin)
+
+    // Condition Feild in card:
+    if(availableCoin<20 || availableCoin===0){
+        alert('পর্যাপ্ত পরিমান কয়েন নেই। কল করতে কমপক্ষে ২০ কইয়েন লাগবে...')
+        return;
+    }
+    const newAvailableCoin = availableCoin-20;
+    document.getElementById("available-coin").innerText=newAvailableCoin
+
+    // Call history :
+
+    const data={
+        name:'নারী ও শিশু সহায়তা',
+        number:'109',
+        time:new Date().toLocaleTimeString()
+    }
+    callHistoryData.push(data)
+
+    // Call History Function :
+const callHistoryContainer = document.getElementById("call-history-container")
+callHistoryContainer.innerHTML="";
+for(const data of callHistoryData){
+    console.log(data)
+    const div = document.createElement("div")
+    div.innerHTML=`
+    <div class="mt-[50px] rounded-lg shadow-xl p-3 bg-[#f6f6f6]">
+                <div class="bg-white flex justify-between items-center p-1 rounded-xl">
+                    <div>
+                        <h1 class="text-[20px] text-[#111111] font-bold">
+                            ${data.name}
+                        </h1>
+                        <p class="ml-2 font-semibold">${data.number}</p>
+                    </div>
+                    <p>${data.time}</p>
+                </div>
+            </div>
+        
+    `
+    callHistoryContainer.appendChild(div)
+}
+})
+
+// card-6:
+document.getElementById("call-btn6").addEventListener('click',function(e){ 
+    
+    alert('দুর্নীতি দমন কমিশন.....106')
+
+    const availableCoin = parseInt(document.getElementById("available-coin").innerText)
+    console.log(availableCoin)
+
+    // Condition Feild in card:
+    if(availableCoin<20 || availableCoin===0){
+        alert('পর্যাপ্ত পরিমান কয়েন নেই। কল করতে কমপক্ষে ২০ কইয়েন লাগবে...')
+        return;
+    }
+    const newAvailableCoin = availableCoin-20;
+    document.getElementById("available-coin").innerText=newAvailableCoin
+
+    // Call history :
+
+    const data={
+        name:'দুদক',
+        number:'106',
+        time:new Date().toLocaleTimeString()
+    }
+    callHistoryData.push(data)
+
+    // Call History Function :
+const callHistoryContainer = document.getElementById("call-history-container")
+callHistoryContainer.innerHTML="";
+for(const data of callHistoryData){
+    console.log(data)
+    const div = document.createElement("div")
+    div.innerHTML=`
+    <div class="mt-[50px] rounded-lg shadow-xl p-3 bg-[#f6f6f6]">
+                <div class="bg-white flex justify-between items-center p-1 rounded-xl">
+                    <div>
+                        <h1 class="text-[20px] text-[#111111] font-bold">
+                            ${data.name}
+                        </h1>
+                        <p class="ml-2 font-semibold">${data.number}</p>
+                    </div>
+                    <p>${data.time}</p>
+                </div>
+            </div>
+        
+    `
+    callHistoryContainer.appendChild(div)
+}
+})
+
+// card-7:
+document.getElementById("call-btn7").addEventListener('click',function(e){ 
+    
+    alert('জরুরি বিদ্যুৎ সরবরাহ.....16216')
+
+    const availableCoin = parseInt(document.getElementById("available-coin").innerText)
+    console.log(availableCoin)
+
+    // Condition Feild in card:
+    if(availableCoin<20 || availableCoin===0){
+        alert('পর্যাপ্ত পরিমান কয়েন নেই। কল করতে কমপক্ষে ২০ কইয়েন লাগবে...')
+        return;
+    }
+    const newAvailableCoin = availableCoin-20;
+    document.getElementById("available-coin").innerText=newAvailableCoin
+
+    // Call history :
+
+    const data={
+        name:'বিদ্যুৎ বিভ্রাট',
+        number:'16216',
+        time:new Date().toLocaleTimeString()
+    }
+    callHistoryData.push(data)
+
+    // Call History Function :
+const callHistoryContainer = document.getElementById("call-history-container")
+callHistoryContainer.innerHTML="";
+for(const data of callHistoryData){
+    console.log(data)
+    const div = document.createElement("div")
+    div.innerHTML=`
+    <div class="mt-[50px] rounded-lg shadow-xl p-3 bg-[#f6f6f6]">
+                <div class="bg-white flex justify-between items-center p-1 rounded-xl">
+                    <div>
+                        <h1 class="text-[20px] text-[#111111] font-bold">
+                            ${data.name}
+                        </h1>
+                        <p class="ml-2 font-semibold">${data.number}</p>
+                    </div>
+                    <p>${data.time}</p>
+                </div>
+            </div>
+        
+    `
+    callHistoryContainer.appendChild(div)
+}
+})
+
+
+
+// card-8:
+document.getElementById("call-btn8").addEventListener('click',function(e){ 
+    
+    alert('ব্র্যাক.....16445')
+
+    const availableCoin = parseInt(document.getElementById("available-coin").innerText)
+    console.log(availableCoin)
+
+    // Condition Feild in card:
+    if(availableCoin<20 || availableCoin===0){
+        alert('পর্যাপ্ত পরিমান কয়েন নেই। কল করতে কমপক্ষে ২০ কইয়েন লাগবে...')
+        return;
+    }
+    const newAvailableCoin = availableCoin-20;
+    document.getElementById("available-coin").innerText=newAvailableCoin
+
+    // Call history :
+
+    const data={
+        name:'ব্র্যাক',
+        number:'16445',
+        time:new Date().toLocaleTimeString()
+    }
+    callHistoryData.push(data)
+
+    // Call History Function :
+const callHistoryContainer = document.getElementById("call-history-container")
+callHistoryContainer.innerHTML="";
+for(const data of callHistoryData){
+    console.log(data)
+    const div = document.createElement("div")
+    div.innerHTML=`
+    <div class="mt-[50px] rounded-lg shadow-xl p-3 bg-[#f6f6f6]">
+                <div class="bg-white flex justify-between items-center p-1 rounded-xl">
+                    <div>
+                        <h1 class="text-[20px] text-[#111111] font-bold">
+                            ${data.name}
+                        </h1>
+                        <p class="ml-2 font-semibold">${data.number}</p>
+                    </div>
+                    <p>${data.time}</p>
+                </div>
+            </div>
+        
+    `
+    callHistoryContainer.appendChild(div)
+}
+})
+
+
+// card-9:
+document.getElementById("call-btn9").addEventListener('click',function(e){ 
+    
+    alert('বাংলাদেশ রেলওয়ে.....163')
+
+    const availableCoin = parseInt(document.getElementById("available-coin").innerText)
+    console.log(availableCoin)
+
+    // Condition Feild in card:
+    if(availableCoin<20 || availableCoin===0){
+        alert('পর্যাপ্ত পরিমান কয়েন নেই। কল করতে কমপক্ষে ২০ কইয়েন লাগবে...')
+        return;
+    }
+    const newAvailableCoin = availableCoin-20;
+    document.getElementById("available-coin").innerText=newAvailableCoin
+
+    // Call history :
+
+    const data={
+        name:'বাংলাদেশ রেলওয়ে',
+        number:'163',
+        time:new Date().toLocaleTimeString()
+    }
+    callHistoryData.push(data)
+
+    // Call History Function :
+const callHistoryContainer = document.getElementById("call-history-container")
+callHistoryContainer.innerHTML="";
+for(const data of callHistoryData){
+    console.log(data)
+    const div = document.createElement("div")
+    div.innerHTML=`
+    <div class="mt-[50px] rounded-lg shadow-xl p-3 bg-[#f6f6f6]">
+                <div class="bg-white flex justify-between items-center p-1 rounded-xl">
+                    <div>
+                        <h1 class="text-[20px] text-[#111111] font-bold">
+                            ${data.name}
+                        </h1>
+                        <p class="ml-2 font-semibold">${data.number}</p>
+                    </div>
+                    <p>${data.time}</p>
+                </div>
+            </div>
+        
+    `
+    callHistoryContainer.appendChild(div)
+}
+})
+
+
+// Clear Button Function:
+
+document.getElementById("clear-btn").addEventListener('click',function(e){
+    e.preventDefault()
+    console.log('clear')
+    callHistoryData= [];
+    const callHistoryContainer = document.getElementById("call-history-container")
+    callHistoryContainer.innerHTML="";
+})
+
+
+
